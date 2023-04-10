@@ -1,0 +1,1 @@
+Write-Host "testScript.ps1 has run"

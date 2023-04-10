@@ -33,9 +33,8 @@
 #       runner: node
 #     "any.go":
 #       runner: go run
+rc: C:\Users\joshb\Documents\Scripts\gwd\testLefthook\testrc.sh
 commit-msg:
-  commands:
-    conventional-commits-check:
-      scripts:
-        "convcoGitHook.ps1 -MessagePath '$1'":
-        runner: pwsh -NoProfile -ExecutionPolicy Bypass -File
+  scripts:
+    "testScript.ps1":
+      runner: pwsh.exe -NoProfile -ExecutionPolicy Bypass -File
